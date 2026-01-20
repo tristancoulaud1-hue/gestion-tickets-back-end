@@ -7,6 +7,7 @@ from services.tickets_service import (
 )
 from models.ticket import TicketCreate, TicketUpdate
 from typing import Optional
+from math import ceil
 
 router = APIRouter()
 
@@ -19,6 +20,8 @@ def get_tickets(
     fromDate: Optional[str] = None,
     toDate: Optional[str] = None,
     sortBy: Optional[str] = None,
+    page: int = 1,
+    limit: int = 5,
 ):
     tickets = read_tickets()
 
@@ -51,7 +54,19 @@ def get_tickets(
         except Exception:
             raise HTTPException(status_code=400, detail="Invalid sort field")
 
-    return tickets
+    total = len(tickets)
+    pages = ceil(total / limit)
+    start = (page - 1) * limit
+    end = start + limit
+    paginated_tickets = tickets[start:end]
+
+    return {
+        "page": page,
+        "limit": limit,
+        "total": total,
+        "pages": pages,
+        "data": paginated_tickets
+    }
 
 @router.post("/tickets")
 def create_ticket(ticket: TicketCreate):
