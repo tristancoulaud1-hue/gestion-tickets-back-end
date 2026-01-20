@@ -20,6 +20,7 @@ def get_tickets(
     fromDate: Optional[str] = None,
     toDate: Optional[str] = None,
     sortBy: Optional[str] = None,
+    order: Optional[str] = "asc",   # 👈 AJOUT
     page: int = 1,
     limit: int = 5,
 ):
@@ -50,7 +51,8 @@ def get_tickets(
 
     if sortBy:
         try:
-            tickets = sorted(tickets, key=lambda x: x.get(sortBy))
+            reverse = order == "desc"
+            tickets = sorted(tickets, key=lambda x: x.get(sortBy), reverse=reverse)
         except Exception:
             raise HTTPException(status_code=400, detail="Invalid sort field")
 
