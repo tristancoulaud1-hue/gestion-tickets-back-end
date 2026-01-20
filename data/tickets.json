@@ -114,7 +114,7 @@
     "title": "Erreur 403 profil utilisateur",
     "description": "Certains utilisateurs ne peuvent pas modifier leur photo de profil (Accès refusé).",
     "priority": "High",
-    "status": "Resolved",
+    "status": "Done",
     "tags": [
       "bug",
       "auth"
@@ -159,5 +159,17 @@
     ],
     "createdAt": "2026-01-16",
     "id": 13
+  },
+  {
+    "title": "Bug bouton login",
+    "description": "Ne répond pas sur mobile",
+    "status": "Open",
+    "priority": "High",
+    "tags": [
+      "bug",
+      "ui"
+    ],
+    "createdAt": "2026-01-16",
+    "id": 14
   }
 ]
