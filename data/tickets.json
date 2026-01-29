@@ -1,71 +1,10 @@
 [
   {
-    "id": 3,
-    "title": "Export CSV corrompu",
-    "description": "L'export des tickets en CSV affiche des caractères spéciaux à la place des accents.",
-    "priority": "Medium",
-    "status": "In progress",
-    "tags": [
-      "bug",
-      "backend"
-    ],
-    "createdAt": "2026-01-17"
-  },
-  {
-    "id": 4,
-    "title": "Mode sombre (Dark Mode)",
-    "description": "Implémenter une bascule de thème pour améliorer le confort visuel de nuit.",
-    "priority": "Low",
-    "status": "Done",
-    "tags": [
-      "feature",
-      "ui"
-    ],
-    "createdAt": "2026-01-17"
-  },
-  {
-    "id": 5,
-    "title": "Lenteur chargement dashboard",
-    "description": "Le tableau de bord met plus de 5 secondes à charger quand il y a plus de 100 tickets.",
-    "priority": "High",
-    "status": "Done",
-    "tags": [
-      "performance",
-      "backend"
-    ],
-    "createdAt": "2026-01-18"
-  },
-  {
-    "id": 6,
-    "title": "Notification email à la création",
-    "description": "Envoyer un email automatique au créateur du ticket pour confirmer la réception.",
-    "priority": "Medium",
-    "status": "Open",
-    "tags": [
-      "feature",
-      "notification"
-    ],
-    "createdAt": "2026-01-18"
-  },
-  {
-    "id": 7,
-    "title": "Crash app sur iOS 17",
-    "description": "L'application se ferme inopinément lors de l'ouverture d'une pièce jointe sur iPhone.",
-    "priority": "High",
-    "status": "In progress",
-    "tags": [
-      "bug",
-      "mobile",
-      "critical"
-    ],
-    "createdAt": "2026-01-19"
-  },
-  {
     "id": 8,
     "title": "Mise à jour des dépendances",
     "description": "Passer les librairies de sécurité à la version supérieure pour éviter les vulnérabilités.",
     "priority": "Low",
-    "status": "In progress",
+    "status": "Open",
     "tags": [
       "maintenance",
       "security"
@@ -77,7 +16,7 @@
     "title": "Recherche par mot-clé",
     "description": "Ajouter une barre de recherche en haut de la liste pour filtrer par titre ou description.",
     "priority": "Medium",
-    "status": "Backlog",
+    "status": "In progress",
     "tags": [
       "feature",
       "ux"
