@@ -5,10 +5,7 @@
     "description": "Passer les librairies de sécurité à la version supérieure pour éviter les vulnérabilités.",
     "priority": "Low",
     "status": "Open",
-    "tags": [
-      "maintenance",
-      "security"
-    ],
+    "tags": ["maintenance", "security"],
     "createdAt": "2026-01-19"
   },
   {
@@ -17,10 +14,7 @@
     "description": "Ajouter une barre de recherche en haut de la liste pour filtrer par titre ou description.",
     "priority": "Medium",
     "status": "In progress",
-    "tags": [
-      "feature",
-      "ux"
-    ],
+    "tags": ["feature", "ux"],
     "createdAt": "2026-01-19"
   },
   {
@@ -29,84 +23,151 @@
     "description": "Certains utilisateurs ne peuvent pas modifier leur photo de profil (Accès refusé).",
     "priority": "High",
     "status": "Done",
-    "tags": [
-      "bug",
-      "auth"
-    ],
+    "tags": ["bug", "auth"],
     "createdAt": "2026-01-15"
   },
   {
+    "id": 11,
     "title": "Bug bouton login",
     "description": "Le bouton de connexion ne répond pas sur mobile (Android).",
     "priority": "High",
     "status": "Open",
-    "tags": [
-      "bug",
-      "ui",
-      "mobile"
-    ],
-    "createdAt": "2026-01-16",
-    "id": 11
+    "tags": ["bug", "ui", "mobile"],
+    "createdAt": "2026-01-16"
   },
   {
+    "id": 12,
     "title": "Bug bouton login",
     "description": "Le bouton de connexion ne répond pas sur mobile (Android).",
     "priority": "High",
     "status": "Open",
-    "tags": [
-      "bug",
-      "ui",
-      "mobile"
-    ],
-    "createdAt": "2026-01-16",
-    "id": 12
+    "tags": ["bug", "ui", "mobile"],
+    "createdAt": "2026-01-16"
   },
   {
+    "id": 13,
     "title": "probleme",
     "description": "Le bouton de connexion ne répond pas sur mobile (Android).",
     "priority": "High",
     "status": "Open",
-    "tags": [
-      "bug",
-      "ui",
-      "mobile"
-    ],
-    "createdAt": "2026-01-16",
-    "id": 13
+    "tags": ["bug", "ui", "mobile"],
+    "createdAt": "2026-01-16"
   },
   {
+    "id": 14,
     "title": "Bug bouton login",
     "description": "Ne répond pas sur mobile",
     "status": "Open",
     "priority": "High",
-    "tags": [
-      "bug",
-      "ui"
-    ],
-    "createdAt": "2026-01-16",
-    "id": 14
+    "tags": ["bug", "ui"],
+    "createdAt": "2026-01-16"
   },
   {
+    "id": 15,
     "title": "Bug chatgpt",
     "description": "probleme",
     "status": "Open",
     "priority": "High",
-    "tags": [
-      "Mobile",
-      "Bug"
-    ],
-    "createdAt": "2026-01-20",
-    "id": 15
+    "tags": ["Mobile", "Bug"],
+    "createdAt": "2026-01-20"
   },
   {
+    "id": 16,
     "title": "Panne internet",
     "description": "Panne au 3ème étage",
     "status": "Open",
     "priority": "High",
-    "tags": [
-      "internet"
-    ],
-    "createdAt": "2026-01-20",
-    "id": 16
+    "tags": ["internet"],
+    "createdAt": "2026-01-20"
+  },
+  {
+    "id": 17,
+    "title": "Clavier défectueux",
+    "description": "La touche 'Espace' ne fonctionne plus sur le poste de l'accueil.",
+    "status": "Open",
+    "priority": "Low",
+    "tags": ["hardware"],
+    "createdAt": "2026-01-21"
+  },
+  {
+    "id": 18,
+    "title": "Export PDF cassé",
+    "description": "Le bouton d'export génère un fichier vide depuis la dernière mise à jour.",
+    "status": "In progress",
+    "priority": "High",
+    "tags": ["bug", "export"],
+    "createdAt": "2026-01-22"
+  },
+  {
+    "id": 19,
+    "title": "Demande de double écran",
+    "description": "Besoin d'un second moniteur pour le bureau de la compta.",
+    "status": "Open",
+    "priority": "Medium",
+    "tags": ["hardware", "request"],
+    "createdAt": "2026-01-22"
+  },
+  {
+    "id": 20,
+    "title": "Lenteur base de données",
+    "description": "Les requêtes de statistiques mettent plus de 10 secondes à charger.",
+    "status": "In progress",
+    "priority": "High",
+    "tags": ["performance", "db"],
+    "createdAt": "2026-01-23"
+  },
+  {
+    "id": 21,
+    "title": "Ajout logo partenaire",
+    "description": "Mettre à jour le footer avec le nouveau logo de la région.",
+    "status": "Done",
+    "priority": "Low",
+    "tags": ["ui", "update"],
+    "createdAt": "2026-01-23"
+  },
+  {
+    "id": 22,
+    "title": "Problème clim salle serveur",
+    "description": "La température dépasse les 25°C, alerte rouge.",
+    "status": "Open",
+    "priority": "High",
+    "tags": ["infra", "urgent"],
+    "createdAt": "2026-01-24"
+  },
+  {
+    "id": 23,
+    "title": "Reset mot de passe",
+    "description": "Utilisateur bloqué suite à 3 tentatives infructueuses.",
+    "status": "Done",
+    "priority": "Medium",
+    "tags": ["auth", "support"],
+    "createdAt": "2026-01-24"
+  },
+  {
+    "id": 24,
+    "title": "Nettoyage des tags",
+    "description": "Supprimer les tags inutilisés dans la base de données.",
+    "status": "Open",
+    "priority": "Low",
+    "tags": ["maintenance", "cleanup"],
+    "createdAt": "2026-01-25"
+  },
+  {
+    "id": 25,
+    "title": "Bug affichage Dark Mode",
+    "description": "Le texte reste noir sur fond sombre dans les paramètres.",
+    "status": "Open",
+    "priority": "Medium",
+    "tags": ["ui", "bug"],
+    "createdAt": "2026-01-25"
+  },
+  {
+    "id": 26,
+    "title": "Migration Cloud",
+    "description": "Préparer le transfert des assets vers AWS S3.",
+    "status": "In progress",
+    "priority": "Medium",
+    "tags": ["infra", "cloud"],
+    "createdAt": "2026-01-26"
   }
 ]
