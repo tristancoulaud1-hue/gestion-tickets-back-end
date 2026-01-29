@@ -1,17 +1,5 @@
 [
   {
-    "id": 2,
-    "title": "Ajouter un filtre par priorité",
-    "description": "Permettre de filtrer les tickets par priorité (Low, Medium, High) sur la page liste.",
-    "priority": "Medium",
-    "status": "Open",
-    "tags": [
-      "feature",
-      "ux"
-    ],
-    "createdAt": "2026-01-15"
-  },
-  {
     "id": 3,
     "title": "Export CSV corrompu",
     "description": "L'export des tickets en CSV affiche des caractères spéciaux à la place des accents.",

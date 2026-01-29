@@ -20,7 +20,7 @@ def get_tickets(
     fromDate: Optional[str] = None,
     toDate: Optional[str] = None,
     sortBy: Optional[str] = None,
-    order: Optional[str] = "asc",   # 👈 AJOUT
+    order: Optional[str] = "asc",
     page: int = 1,
     limit: int = 5,
 ):
