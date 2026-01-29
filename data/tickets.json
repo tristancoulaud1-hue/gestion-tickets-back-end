@@ -16,7 +16,7 @@
     "title": "Export CSV corrompu",
     "description": "L'export des tickets en CSV affiche des caractères spéciaux à la place des accents.",
     "priority": "Medium",
-    "status": "Open",
+    "status": "In progress",
     "tags": [
       "bug",
       "backend"
@@ -40,7 +40,7 @@
     "title": "Lenteur chargement dashboard",
     "description": "Le tableau de bord met plus de 5 secondes à charger quand il y a plus de 100 tickets.",
     "priority": "High",
-    "status": "In progress",
+    "status": "Done",
     "tags": [
       "performance",
       "backend"
@@ -64,7 +64,7 @@
     "title": "Crash app sur iOS 17",
     "description": "L'application se ferme inopinément lors de l'ouverture d'une pièce jointe sur iPhone.",
     "priority": "High",
-    "status": "Open",
+    "status": "In progress",
     "tags": [
       "bug",
       "mobile",
@@ -170,5 +170,16 @@
     ],
     "createdAt": "2026-01-20",
     "id": 15
+  },
+  {
+    "title": "Panne internet",
+    "description": "Panne au 3ème étage",
+    "status": "Open",
+    "priority": "High",
+    "tags": [
+      "internet"
+    ],
+    "createdAt": "2026-01-20",
+    "id": 16
   }
 ]
