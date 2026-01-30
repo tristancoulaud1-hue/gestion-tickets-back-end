@@ -89,7 +89,7 @@ pip install "uvicorn[standard]"
 Depuis la racine du projet :
 
 ```bash
-uvicorn backend.main:app --reload
+uvicorn main:app --reload
 ```
 
 - API : http://127.0.0.1:8000
