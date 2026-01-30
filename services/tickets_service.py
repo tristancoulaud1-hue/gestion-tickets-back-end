@@ -7,8 +7,14 @@ from typing import Optional
 DATA_PATH = Path(__file__).parent.parent / "data" / "tickets.json"
 
 def read_tickets():
-    with open(DATA_PATH, "r", encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        if not DATA_PATH.exists():
+            return []
+        with open(DATA_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        print("Erreur : Le fichier tickets.json est corrompu.")
+        return []
 
 def write_tickets(tickets):
     with open(DATA_PATH, "w", encoding="utf-8") as f:
