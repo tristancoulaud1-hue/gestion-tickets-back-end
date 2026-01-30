@@ -88,13 +88,22 @@ def query_tickets(
 
     if sortBy:
         reverse = (order == "desc")
-
         allowed_sort_fields = {"createdAt", "title", "priority", "status", "id"}
+
         if sortBy not in allowed_sort_fields:
             raise ValueError("Invalid sort field")
 
-        tickets = sorted(tickets, key=lambda x: x.get(sortBy) or "", reverse=reverse)
+        priority_order = {"High": 3, "Medium": 2, "Low": 1}
 
+        if sortBy == "priority":
+            tickets = sorted(
+                tickets,
+                key=lambda x: priority_order.get(x.get("priority"), 0),
+                reverse=reverse
+            )
+        else:
+            tickets = sorted(tickets, key=lambda x: x.get(sortBy) or "", reverse=reverse)
+        
     # Pagination
     total = len(tickets)
     pages = ceil(total / limit) if limit > 0 else 1
