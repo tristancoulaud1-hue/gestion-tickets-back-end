@@ -1,5 +1,6 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import List, Optional, Literal
+from datetime import date
 
 class TicketBase(BaseModel):
     title: str
@@ -7,7 +8,6 @@ class TicketBase(BaseModel):
     status: Literal["Open", "In progress", "Done", "Backlog"]
     priority: Literal["Low", "Medium", "High"]
     tags: List[str]
-    createdAt: str
 
 class TicketCreate(TicketBase):
     pass
