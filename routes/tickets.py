@@ -5,6 +5,13 @@ from services.tickets_service import (
     update_ticket,
     delete_ticket,
 )
+from services.tickets_service import (
+    query_tickets,
+    add_ticket,
+    update_ticket,
+    delete_ticket,
+)
+
 from models.ticket import TicketCreate, TicketUpdate
 from typing import Optional
 from math import ceil
@@ -24,55 +31,28 @@ def get_tickets(
     page: int = 1,
     limit: int = 5,
 ):
-    tickets = read_tickets()
+    try:
+        return query_tickets(
+            status=status,
+            priority=priority,
+            tag=tag,
+            search=search,
+            fromDate=fromDate,
+            toDate=toDate,
+            sortBy=sortBy,
+            order=order or "asc",
+            page=page,
+            limit=limit,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception:
+        raise HTTPException(status_code=500, detail="Internal server error")
 
-    if status:
-        tickets = [t for t in tickets if t["status"] == status]
-
-    if priority:
-        tickets = [t for t in tickets if t["priority"] == priority]
-
-    if tag:
-        tickets = [t for t in tickets if tag in t.get("tags", [])]
-
-    if search:
-        search_lower = search.lower()
-        tickets = [
-            t for t in tickets
-            if search_lower in t["title"].lower()
-            or search_lower in t["description"].lower()
-        ]
-
-    if fromDate:
-        tickets = [t for t in tickets if t["createdAt"] >= fromDate]
-
-    if toDate:
-        tickets = [t for t in tickets if t["createdAt"] <= toDate]
-
-    if sortBy:
-        try:
-            reverse = order == "desc"
-            tickets = sorted(tickets, key=lambda x: x.get(sortBy), reverse=reverse)
-        except Exception:
-            raise HTTPException(status_code=400, detail="Invalid sort field")
-
-    total = len(tickets)
-    pages = ceil(total / limit)
-    start = (page - 1) * limit
-    end = start + limit
-    paginated_tickets = tickets[start:end]
-
-    return {
-        "page": page,
-        "limit": limit,
-        "total": total,
-        "pages": pages,
-        "data": paginated_tickets
-    }
 
 @router.post("/tickets")
 def create_ticket(ticket: TicketCreate):
-    return add_ticket(ticket.dict())
+    return add_ticket(ticket.model_dump())
 
 @router.patch("/tickets/{ticket_id}")
 def patch_ticket(ticket_id: int, updated_fields: TicketUpdate):
