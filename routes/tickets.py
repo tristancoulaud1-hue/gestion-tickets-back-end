@@ -1,18 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from services.tickets_service import (
-    read_tickets,
-    add_ticket,
-    update_ticket,
-    delete_ticket,
-)
-from services.tickets_service import (
-    query_tickets,
-    add_ticket,
-    update_ticket,
-    delete_ticket,
-)
-
-from models.ticket import TicketCreate, TicketUpdate
+from services.tickets_service import (read_tickets, add_ticket, update_ticket, delete_ticket, query_tickets)
+from models.ticket import (TicketCreate, TicketUpdate)
 from typing import Optional
 from math import ceil
 

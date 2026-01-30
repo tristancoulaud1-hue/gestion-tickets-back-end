@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 from datetime import date
+from math import ceil
+from typing import Optional
 
 DATA_PATH = Path(__file__).parent.parent / "data" / "tickets.json"
 
@@ -19,21 +21,8 @@ def add_ticket(new_ticket: dict):
     new_ticket["id"] = new_id
     new_ticket["createdAt"] = date.today().isoformat()
 
-    new_ticket["createdAt"] = date.today().isoformat() 
-
     tickets.append(new_ticket)
     write_tickets(tickets)
-
-    return new_ticket
-def add_ticket(new_ticket: dict):
-    tickets = read_tickets()
-
-    new_id = max(ticket["id"] for ticket in tickets) + 1 if tickets else 1
-    new_ticket["id"] = new_id
-
-    tickets.append(new_ticket)
-    write_tickets(tickets)
-
 
     return new_ticket
 

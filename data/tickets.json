@@ -1,17 +1,5 @@
 [
   {
-    "id": 8,
-    "title": "Mise à jour des dépendances",
-    "description": "Passer les librairies de sécurité à la version supérieure pour éviter les vulnérabilités.",
-    "priority": "Low",
-    "status": "Open",
-    "tags": [
-      "maintenance",
-      "security"
-    ],
-    "createdAt": "2026-01-19"
-  },
-  {
     "id": 9,
     "title": "Recherche par mot-clé",
     "description": "Ajouter une barre de recherche en haut de la liste pour filtrer par titre ou description.",
@@ -229,18 +217,6 @@
     "createdAt": "2026-01-26"
   },
   {
-    "title": "bug",
-    "description": "ceci est un bug",
-    "status": "Open",
-    "priority": "Low",
-    "tags": [
-      "bug",
-      "bug"
-    ],
-    "createdAt": "2026-01-29",
-    "id": 27
-  },
-  {
     "title": "vgnv",
     "description": ",vb,",
     "status": "Open",
@@ -253,42 +229,6 @@
     "id": 28
   },
   {
-    "title": "bug test",
-    "description": "test test test test",
-    "status": "Open",
-    "priority": "Low",
-    "tags": [
-      "test",
-      "test",
-      "test",
-      ""
-    ],
-    "createdAt": "2026-01-30",
-    "id": 29
-  },
-  {
-    "title": "TEEEEEEEEEEEEEEEEEEEEEEEEST",
-    "description": "TEEEEEEEEEEEEEEEEEEEEEEEEST",
-    "status": "Open",
-    "priority": "Low",
-    "tags": [
-      "TEEEEEEEEEEEEEEEEEEEEEEEEST"
-    ],
-    "createdAt": "2026-01-30",
-    "id": 30
-  },
-  {
-    "title": "POSTMAN",
-    "description": "gfdgdfgfdg",
-    "status": "Open",
-    "priority": "Low",
-    "tags": [
-      ""
-    ],
-    "createdAt": "2026-01-30",
-    "id": 31
-  },
-  {
     "title": "POSTMAN",
     "description": "gfdgdfgfdg",
     "status": "Open",
@@ -298,27 +238,5 @@
     ],
     "createdAt": "1970-01-01",
     "id": 32
-  },
-  {
-    "title": "POSTMAN",
-    "description": "gfdgdfgfdg",
-    "status": "Open",
-    "priority": "Low",
-    "tags": [
-      ""
-    ],
-    "id": 33,
-    "createdAt": "2026-01-30"
-  },
-  {
-    "title": "TESTTESTTESTTESTTSETT",
-    "description": "TESTTESTTESTTESTTSETT",
-    "status": "Open",
-    "priority": "Low",
-    "tags": [
-      "TESTTESTTESTTESTTSETT"
-    ],
-    "id": 34,
-    "createdAt": "2026-01-30"
   }
 ]
